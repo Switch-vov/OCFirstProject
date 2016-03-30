@@ -284,7 +284,120 @@ int main(int argc, const char * argv[]) {
 //        }
 //    }
 //    NSLog(@"%ld", maxScore);
-
+    
+    
+//    NSSet *set1 = [NSSet setWithObjects:@"张三", @"李四", nil];
+//    
+//    NSSet *set2 = [[NSSet alloc] initWithObjects:@"张三", @"李四", nil];
+//    
+//    NSArray *array1 = [set1 allObjects];
+//    
+//    NSUInteger count = [set1 count];
+//    
+//    NSString *str1 = [set1 anyObject];
+//    
+//    BOOL isContain = [set1 containsObject:@"李四"];
+    
+    
+//    NSArray *array1 = [NSArray arrayWithObjects:@"张三", @"李四", @"王五", nil];
+//    NSNumber *number = [NSNumber numberWithInt:200];
+//    
+//    NSDictionary *dic1 = [[NSDictionary alloc] initWithObjectsAndKeys:array1, @"names", number, @"score", nil];
+//    
+//    NSDictionary *dic2 = [NSDictionary dictionaryWithObjectsAndKeys:array1, @"names", number, @"score", nil];
+//    
+//    NSUInteger count = [dic1 count];
+//    
+//    NSArray *array = [dic1 objectForKey:@"names"];
+//    
+//    NSArray *keys = [dic1 allKeys];
+//    
+//    NSArray *values = [dic1 allValues];
+//    
+//    NSDictionary *dic3 = @{@"names": array1, @"score": number};
+//
+//    NSNumber *number2 = dic3[@"socre"];
+//    
+//    
+//    NSArray *array2 = [NSArray arrayWithObjects:@"张三", @"李四", @"王五", nil];
+//
+//    NSMutableDictionary *dic4 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:array1, @"names", nil];
+//    
+//    NSNumber *number3 = [NSNumber numberWithInt:200];
+//    NSString *user = @"123456@qq.com";
+//    [dic4 setObject:number3 forKey:@"socre"];
+//    [dic4 setObject:user forKey:@"email"];
+//    
+//    [dic4 removeObjectForKey:@"names"];
+//    [dic4 removeAllObjects];
+//    
+//    for (id key in dic3) {
+//        id value = [dic3 objectForKey:key];
+//        NSLog(@"key:%@,value:%@", key, value);
+//    }
+//    
+//    
+//    NSArray *keys2 = [dic3 allKeys];
+//    for (int i = 0; i < [keys2 count]; i++) {
+//        id key = [keys objectAtIndex:i];
+//        id value = [dic3 objectForKey:key];
+//        NSLog(@"key:%@,value:%@", key, value);
+//    }
+    
+    
+//    NSNumber *intNumber = [NSNumber numberWithInt:100];
+//    NSNumber *longNumber = [NSNumber numberWithLong:100000];
+//    NSNumber *floatNumber = [NSNumber numberWithFloat:10.5];
+//    NSNumber *boolNumber = [NSNumber numberWithBool:true];
+//    NSNumber *charNumber = [NSNumber numberWithChar:'a'];
+//    
+//    int intValue = [intNumber intValue];
+//    long longValue = [longNumber longValue];
+//    float floatValue = [floatNumber floatValue];
+//    BOOL boolValue = [boolNumber boolValue];
+//    char charValue = [charNumber charValue];
+//    
+//    
+//    NSNumber *intNumber2 = @100;
+//    NSNumber *longNumber2 = @10000000;
+//    NSNumber *floatNumber2 = @10.5;
+//    NSNumber *boolNumber2 = @true;
+//    NSNumber *charNumber2 = @'a';
+//    NSNumber *value = @(10 + 111);
+    
+    
+//    NSSize size = {100, 200};
+//    NSValue *value = [NSValue value:&size withObjCType:@encode(NSSize)];
+//    NSSize newSize;
+//    [value getValue:&newSize];
+//    NSLog(@"new size : %@", NSStringFromSize(newSize));
+    
+    
+    NSDate *date1 = [NSDate date];
+    
+    NSDate *date2 = [NSDate dateWithTimeIntervalSinceNow: + (24 * 60 * 60)];
+    
+    NSDate *date3 = [NSDate dateWithTimeIntervalSinceNow: - (24 * 60 * 60)];
+    
+    NSTimeInterval timeInterval = [date1 timeIntervalSince1970];
+    
+    NSDate *date4 = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    
+    NSComparisonResult result = [date1 compare:date2];
+    if (result == NSOrderedAscending) {
+        NSLog(@"<");
+    } else if (result == NSOrderedDescending ) {
+        NSLog(@">");
+    }
+    
+    if ([date1 timeIntervalSince1970] > [date2 timeIntervalSince1970]) {
+        NSLog(@">");
+    } else if ([date1 timeIntervalSince1970] < [date2 timeIntervalSince1970]){
+        NSLog(@"<");
+    }
+    
+    
+    
     
     
 }
