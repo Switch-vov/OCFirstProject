@@ -408,31 +408,34 @@ int main(int argc, const char * argv[]) {
 //    NSLog(@"%@", formateDate);
     
     
-    Course *course = [[Course alloc] init];
-    NSMutableDictionary *courseDict = [[NSMutableDictionary alloc] init];
-    [courseDict setObject:@"CoreJava" forKey:@"Tom"];
-    [courseDict setObject:@"Oracle" forKey:@"John"];
-    [courseDict setObject:@"JSP" forKey:@"Kevin"];
-    [courseDict setObject:@"JSP" forKey:@"Lucy"];
-    [course setCourse:courseDict];
-    [courseDict setObject:@"JDBC" forKey:@"Allen"];
-    [course setCourse:courseDict];
+//    Course *course = [[Course alloc] init];
+//    NSMutableDictionary *courseDict = [[NSMutableDictionary alloc] init];
+//    [courseDict setObject:@"CoreJava" forKey:@"Tom"];
+//    [courseDict setObject:@"Oracle" forKey:@"John"];
+//    [courseDict setObject:@"JSP" forKey:@"Kevin"];
+//    [courseDict setObject:@"JSP" forKey:@"Lucy"];
+//    [course setCourse:courseDict];
+//    [courseDict setObject:@"JDBC" forKey:@"Allen"];
+//    [course setCourse:courseDict];
+//    
+//    NSMutableDictionary *courses = [course course];
+//    
+//    for (id key in courses) {
+//        id value = [courses objectForKey:key];
+//        NSLog(@"课程名：%@，老师：%@", value, key);
+//    }
+//
+//    
+//    for (id key in courses) {
+//        id value = [courses objectForKey:key];
+//        if (value == @"JSP") {
+//            NSLog(@"课程名：%@，老师：%@", value, key);
+//        }
+//    }
     
-    NSMutableDictionary *courses = [course course];
     
-    for (id key in courses) {
-        id value = [courses objectForKey:key];
-        NSLog(@"课程名：%@，老师：%@", value, key);
-    }
-
     
-    for (id key in courses) {
-        id value = [courses objectForKey:key];
-        if (value == @"JSP") {
-            NSLog(@"课程名：%@，老师：%@", value, key);
-        }
-    }
     
-
+    
     
 }

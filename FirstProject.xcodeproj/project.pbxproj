@@ -18,6 +18,9 @@
 		52A225EA1C9FDC38000B4C5C /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A225E91C9FDC38000B4C5C /* Square.m */; };
 		52A225ED1C9FDCE1000B4C5C /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A225EC1C9FDCE1000B4C5C /* Person2.m */; };
 		52A2A86D1CBB81F400070DDB /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A86C1CBB81F400070DDB /* Course.m */; };
+		52A2A8701CBB8B1F00070DDB /* NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A86F1CBB8B1F00070DDB /* NSString.m */; };
+		52A2A8741CBB8C4C00070DDB /* Student2.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A8731CBB8C4C00070DDB /* Student2.m */; };
+		52A2A8771CBB905C00070DDB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A8761CBB905C00070DDB /* User.m */; };
 		52BE62521C84267200245806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE62511C84267200245806 /* main.m */; };
 		52F4DDC21C8D62C600C86F35 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4DDC11C8D62C600C86F35 /* Student.m */; };
 		52F4DDC51C8D6A1100C86F35 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4DDC41C8D6A1100C86F35 /* Car.m */; };
@@ -59,6 +62,13 @@
 		52A225EC1C9FDCE1000B4C5C /* Person2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
 		52A2A86B1CBB81F400070DDB /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		52A2A86C1CBB81F400070DDB /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		52A2A86E1CBB8B1F00070DDB /* NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString.h; sourceTree = "<group>"; };
+		52A2A86F1CBB8B1F00070DDB /* NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString.m; sourceTree = "<group>"; };
+		52A2A8711CBB8BEB00070DDB /* SwitchProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchProtocol.h; sourceTree = "<group>"; };
+		52A2A8721CBB8C4C00070DDB /* Student2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student2.h; sourceTree = "<group>"; };
+		52A2A8731CBB8C4C00070DDB /* Student2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student2.m; sourceTree = "<group>"; };
+		52A2A8751CBB905C00070DDB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		52A2A8761CBB905C00070DDB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		52BE624E1C84267100245806 /* FirstProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BE62511C84267200245806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52F4DDC01C8D62C600C86F35 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -83,6 +93,8 @@
 		52BE62451C84267100245806 = {
 			isa = PBXGroup;
 			children = (
+				52A2A8751CBB905C00070DDB /* User.h */,
+				52A2A8761CBB905C00070DDB /* User.m */,
 				52BE62501C84267100245806 /* FirstProject */,
 				52BE624F1C84267100245806 /* Products */,
 			);
@@ -128,6 +140,11 @@
 				52A225E91C9FDC38000B4C5C /* Square.m */,
 				52A2A86B1CBB81F400070DDB /* Course.h */,
 				52A2A86C1CBB81F400070DDB /* Course.m */,
+				52A2A86E1CBB8B1F00070DDB /* NSString.h */,
+				52A2A86F1CBB8B1F00070DDB /* NSString.m */,
+				52A2A8711CBB8BEB00070DDB /* SwitchProtocol.h */,
+				52A2A8721CBB8C4C00070DDB /* Student2.h */,
+				52A2A8731CBB8C4C00070DDB /* Student2.m */,
 			);
 			path = FirstProject;
 			sourceTree = "<group>";
@@ -190,10 +207,12 @@
 			files = (
 				5283C69A1C9943FE002417E8 /* Person.m in Sources */,
 				52A225EA1C9FDC38000B4C5C /* Square.m in Sources */,
+				52A2A8771CBB905C00070DDB /* User.m in Sources */,
 				52A225E11C9FD370000B4C5C /* Tiger.m in Sources */,
 				5283C6971C993ECC002417E8 /* Book.m in Sources */,
 				52A2A86D1CBB81F400070DDB /* Course.m in Sources */,
 				52F4DDC51C8D6A1100C86F35 /* Car.m in Sources */,
+				52A2A8741CBB8C4C00070DDB /* Student2.m in Sources */,
 				52A225DE1C9FD2F9000B4C5C /* Rabbit.m in Sources */,
 				52A225E41C9FD8D6000B4C5C /* Shape.m in Sources */,
 				52BE62521C84267200245806 /* main.m in Sources */,
@@ -201,6 +220,7 @@
 				52A225DB1C9FD11B000B4C5C /* Animal.m in Sources */,
 				52A225E71C9FDB7E000B4C5C /* Circle.m in Sources */,
 				52F4DDC21C8D62C600C86F35 /* Student.m in Sources */,
+				52A2A8701CBB8B1F00070DDB /* NSString.m in Sources */,
 				52F4DDC81C8D6CC500C86F35 /* Manager.m in Sources */,
 				52A225ED1C9FDCE1000B4C5C /* Person2.m in Sources */,
 			);
