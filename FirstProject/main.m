@@ -20,7 +20,7 @@
 #import "Circle.h"
 #import "Square.h"
 #import "Person2.h"
-
+#import "Course.h"
 int main(int argc, const char * argv[]) {
 //    int i = 1;
 //    NSLog(@"%d", i);
@@ -373,33 +373,66 @@ int main(int argc, const char * argv[]) {
 //    NSLog(@"new size : %@", NSStringFromSize(newSize));
     
     
-    NSDate *date1 = [NSDate date];
+//    NSDate *date1 = [NSDate date];
+//    
+//    NSDate *date2 = [NSDate dateWithTimeIntervalSinceNow: + (24 * 60 * 60)];
+//    
+//    NSDate *date3 = [NSDate dateWithTimeIntervalSinceNow: - (24 * 60 * 60)];
+//    
+//    NSTimeInterval timeInterval = [date1 timeIntervalSince1970];
+//    
+//    NSDate *date4 = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+//    
+//    NSComparisonResult result = [date1 compare:date2];
+//    if (result == NSOrderedAscending) {
+//        NSLog(@"<");
+//    } else if (result == NSOrderedDescending ) {
+//        NSLog(@">");
+//    }
+//    
+//    if ([date1 timeIntervalSince1970] > [date2 timeIntervalSince1970]) {
+//        NSLog(@">");
+//    } else if ([date1 timeIntervalSince1970] < [date2 timeIntervalSince1970]){
+//        NSLog(@"<");
+//    }
+//    
+//    NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
+//    [dateFormater setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
+//    NSString *dateString1 = [dateFormater stringFromDate:date1];
+//    NSLog(@"当前系统：格式化后1: %@", dateString1);
+//    
+//    NSString *str = @"2016-04-11 14:41:52";
+//    NSDateFormatter *dateFormater2 = [[NSDateFormatter alloc] init];
+//    [dateFormater2 setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+//    NSData *formateDate = [dateFormater2 dateFromString:str];
+//    NSLog(@"%@", formateDate);
     
-    NSDate *date2 = [NSDate dateWithTimeIntervalSinceNow: + (24 * 60 * 60)];
     
-    NSDate *date3 = [NSDate dateWithTimeIntervalSinceNow: - (24 * 60 * 60)];
+    Course *course = [[Course alloc] init];
+    NSMutableDictionary *courseDict = [[NSMutableDictionary alloc] init];
+    [courseDict setObject:@"CoreJava" forKey:@"Tom"];
+    [courseDict setObject:@"Oracle" forKey:@"John"];
+    [courseDict setObject:@"JSP" forKey:@"Kevin"];
+    [courseDict setObject:@"JSP" forKey:@"Lucy"];
+    [course setCourse:courseDict];
+    [courseDict setObject:@"JDBC" forKey:@"Allen"];
+    [course setCourse:courseDict];
     
-    NSTimeInterval timeInterval = [date1 timeIntervalSince1970];
+    NSMutableDictionary *courses = [course course];
     
-    NSDate *date4 = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    for (id key in courses) {
+        id value = [courses objectForKey:key];
+        NSLog(@"课程名：%@，老师：%@", value, key);
+    }
+
     
-    NSComparisonResult result = [date1 compare:date2];
-    if (result == NSOrderedAscending) {
-        NSLog(@"<");
-    } else if (result == NSOrderedDescending ) {
-        NSLog(@">");
+    for (id key in courses) {
+        id value = [courses objectForKey:key];
+        if (value == @"JSP") {
+            NSLog(@"课程名：%@，老师：%@", value, key);
+        }
     }
     
-    if ([date1 timeIntervalSince1970] > [date2 timeIntervalSince1970]) {
-        NSLog(@">");
-    } else if ([date1 timeIntervalSince1970] < [date2 timeIntervalSince1970]){
-        NSLog(@"<");
-    }
-    
-    
-    
-    
+
     
 }
-
-

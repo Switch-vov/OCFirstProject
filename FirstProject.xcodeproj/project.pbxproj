@@ -17,6 +17,7 @@
 		52A225E71C9FDB7E000B4C5C /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A225E61C9FDB7E000B4C5C /* Circle.m */; };
 		52A225EA1C9FDC38000B4C5C /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A225E91C9FDC38000B4C5C /* Square.m */; };
 		52A225ED1C9FDCE1000B4C5C /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A225EC1C9FDCE1000B4C5C /* Person2.m */; };
+		52A2A86D1CBB81F400070DDB /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A86C1CBB81F400070DDB /* Course.m */; };
 		52BE62521C84267200245806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE62511C84267200245806 /* main.m */; };
 		52F4DDC21C8D62C600C86F35 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4DDC11C8D62C600C86F35 /* Student.m */; };
 		52F4DDC51C8D6A1100C86F35 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4DDC41C8D6A1100C86F35 /* Car.m */; };
@@ -56,6 +57,8 @@
 		52A225E91C9FDC38000B4C5C /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		52A225EB1C9FDCE1000B4C5C /* Person2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person2.h; sourceTree = "<group>"; };
 		52A225EC1C9FDCE1000B4C5C /* Person2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
+		52A2A86B1CBB81F400070DDB /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		52A2A86C1CBB81F400070DDB /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		52BE624E1C84267100245806 /* FirstProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BE62511C84267200245806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52F4DDC01C8D62C600C86F35 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				52A225E61C9FDB7E000B4C5C /* Circle.m */,
 				52A225E81C9FDC38000B4C5C /* Square.h */,
 				52A225E91C9FDC38000B4C5C /* Square.m */,
+				52A2A86B1CBB81F400070DDB /* Course.h */,
+				52A2A86C1CBB81F400070DDB /* Course.m */,
 			);
 			path = FirstProject;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				52A225EA1C9FDC38000B4C5C /* Square.m in Sources */,
 				52A225E11C9FD370000B4C5C /* Tiger.m in Sources */,
 				5283C6971C993ECC002417E8 /* Book.m in Sources */,
+				52A2A86D1CBB81F400070DDB /* Course.m in Sources */,
 				52F4DDC51C8D6A1100C86F35 /* Car.m in Sources */,
 				52A225DE1C9FD2F9000B4C5C /* Rabbit.m in Sources */,
 				52A225E41C9FD8D6000B4C5C /* Shape.m in Sources */,
