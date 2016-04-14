@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525334A31CBE215800CCA574 /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 525334A21CBE215800CCA574 /* Instrument.m */; };
+		525334A61CBE21DE00CCA574 /* Piano.m in Sources */ = {isa = PBXBuildFile; fileRef = 525334A51CBE21DE00CCA574 /* Piano.m */; };
+		525334A91CBE226D00CCA574 /* Violin.m in Sources */ = {isa = PBXBuildFile; fileRef = 525334A81CBE226D00CCA574 /* Violin.m */; };
+		525334AC1CBE22AF00CCA574 /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 525334AB1CBE22AF00CCA574 /* Actor.m */; };
 		5283C6971C993ECC002417E8 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 5283C6961C993ECC002417E8 /* Book.m */; };
 		5283C69A1C9943FE002417E8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5283C6991C9943FE002417E8 /* Person.m */; };
 		5283C69D1C994409002417E8 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5283C69C1C994409002417E8 /* Dog.m */; };
@@ -40,6 +44,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		525334A11CBE215800CCA574 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		525334A21CBE215800CCA574 /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
+		525334A41CBE21DE00CCA574 /* Piano.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Piano.h; path = ../Piano.h; sourceTree = "<group>"; };
+		525334A51CBE21DE00CCA574 /* Piano.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Piano.m; path = ../Piano.m; sourceTree = "<group>"; };
+		525334A71CBE226D00CCA574 /* Violin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Violin.h; sourceTree = "<group>"; };
+		525334A81CBE226D00CCA574 /* Violin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Violin.m; sourceTree = "<group>"; };
+		525334AA1CBE22AF00CCA574 /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		525334AB1CBE22AF00CCA574 /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actor.m; sourceTree = "<group>"; };
 		5283C6951C993ECC002417E8 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		5283C6961C993ECC002417E8 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		5283C6981C9943FE002417E8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -67,8 +79,8 @@
 		52A2A8711CBB8BEB00070DDB /* SwitchProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchProtocol.h; sourceTree = "<group>"; };
 		52A2A8721CBB8C4C00070DDB /* Student2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student2.h; sourceTree = "<group>"; };
 		52A2A8731CBB8C4C00070DDB /* Student2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student2.m; sourceTree = "<group>"; };
-		52A2A8751CBB905C00070DDB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		52A2A8761CBB905C00070DDB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		52A2A8751CBB905C00070DDB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		52A2A8761CBB905C00070DDB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
 		52BE624E1C84267100245806 /* FirstProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BE62511C84267200245806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52F4DDC01C8D62C600C86F35 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -93,8 +105,6 @@
 		52BE62451C84267100245806 = {
 			isa = PBXGroup;
 			children = (
-				52A2A8751CBB905C00070DDB /* User.h */,
-				52A2A8761CBB905C00070DDB /* User.m */,
 				52BE62501C84267100245806 /* FirstProject */,
 				52BE624F1C84267100245806 /* Products */,
 			);
@@ -111,6 +121,10 @@
 		52BE62501C84267100245806 /* FirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				525334A41CBE21DE00CCA574 /* Piano.h */,
+				525334A51CBE21DE00CCA574 /* Piano.m */,
+				52A2A8751CBB905C00070DDB /* User.h */,
+				52A2A8761CBB905C00070DDB /* User.m */,
 				52BE62511C84267200245806 /* main.m */,
 				52F4DDC01C8D62C600C86F35 /* Student.h */,
 				52F4DDC11C8D62C600C86F35 /* Student.m */,
@@ -145,6 +159,12 @@
 				52A2A8711CBB8BEB00070DDB /* SwitchProtocol.h */,
 				52A2A8721CBB8C4C00070DDB /* Student2.h */,
 				52A2A8731CBB8C4C00070DDB /* Student2.m */,
+				525334A11CBE215800CCA574 /* Instrument.h */,
+				525334A21CBE215800CCA574 /* Instrument.m */,
+				525334A71CBE226D00CCA574 /* Violin.h */,
+				525334A81CBE226D00CCA574 /* Violin.m */,
+				525334AA1CBE22AF00CCA574 /* Actor.h */,
+				525334AB1CBE22AF00CCA574 /* Actor.m */,
 			);
 			path = FirstProject;
 			sourceTree = "<group>";
@@ -217,8 +237,12 @@
 				52A225E41C9FD8D6000B4C5C /* Shape.m in Sources */,
 				52BE62521C84267200245806 /* main.m in Sources */,
 				5283C69D1C994409002417E8 /* Dog.m in Sources */,
+				525334A91CBE226D00CCA574 /* Violin.m in Sources */,
 				52A225DB1C9FD11B000B4C5C /* Animal.m in Sources */,
+				525334A61CBE21DE00CCA574 /* Piano.m in Sources */,
 				52A225E71C9FDB7E000B4C5C /* Circle.m in Sources */,
+				525334A31CBE215800CCA574 /* Instrument.m in Sources */,
+				525334AC1CBE22AF00CCA574 /* Actor.m in Sources */,
 				52F4DDC21C8D62C600C86F35 /* Student.m in Sources */,
 				52A2A8701CBB8B1F00070DDB /* NSString.m in Sources */,
 				52F4DDC81C8D6CC500C86F35 /* Manager.m in Sources */,

@@ -21,6 +21,10 @@
 #import "Square.h"
 #import "Person2.h"
 #import "Course.h"
+#import "Actor.h"
+#import "Instrument.h"
+#import "Piano.h"
+#import "Violin.h"
 int main(int argc, const char * argv[]) {
 //    int i = 1;
 //    NSLog(@"%d", i);
@@ -433,8 +437,28 @@ int main(int argc, const char * argv[]) {
 //        }
 //    }
     
+
+//    Instrument *instrument = [[Violin alloc] init];
+//    Actor *actor = [[Actor alloc] init];
+//    [actor doplay:instrument];
+//    instrument = [[Piano alloc] init];
+//    [actor doplay:instrument];
     
+    Student *s = [[Student alloc] init];
+    [s study];
     
+    // 反射，选择器，可以调用无参方法，可以调用有参数方法，但是参数最多只能有两个
+    SEL selector = @selector(study);
+    [s performSelector:selector];
+    
+    SEL selector2 = @selector(print:);
+    NSString *str = @"ad";
+    [s performSelector:selector2 withObject:str];
+    
+    SEL selector3 = @selector(printClass:school:);
+    NSString *clazz = @"3";
+    NSString *school = @"dx";
+    [s performSelector:selector3 withObject:clazz withObject:school];
     
     
     
