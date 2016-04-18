@@ -444,21 +444,95 @@ int main(int argc, const char * argv[]) {
 //    instrument = [[Piano alloc] init];
 //    [actor doplay:instrument];
     
-    Student *s = [[Student alloc] init];
-    [s study];
+//    Student *s = [[Student alloc] init];
+//    [s study];
+//    
+//    // 反射，选择器，可以调用无参方法，可以调用有参数方法，但是参数最多只能有两个
+//    SEL selector = @selector(study);
+//    [s performSelector:selector];
+//    
+//    SEL selector2 = @selector(print:);
+//    NSString *str = @"ad";
+//    [s performSelector:selector2 withObject:str];
+//    
+//    SEL selector3 = @selector(printClass:school:);
+//    NSString *clazz = @"3";
+//    NSString *school = @"dx";
+//    [s performSelector:selector3 withObject:clazz withObject:school];
+//    
+//    [s performSelector:selector2 withObject:str afterDelay:5];
+//    [[NSRunLoop currentRunLoop] run];
     
-    // 反射，选择器，可以调用无参方法，可以调用有参数方法，但是参数最多只能有两个
-    SEL selector = @selector(study);
-    [s performSelector:selector];
+    // char to NSString
+    char s[] = "abava";
     
-    SEL selector2 = @selector(print:);
-    NSString *str = @"ad";
-    [s performSelector:selector2 withObject:str];
+    NSString *re2 = [NSString stringWithCString:s encoding:NSUTF8StringEncoding];
+    NSLog(@"%@", re2);
     
-    SEL selector3 = @selector(printClass:school:);
-    NSString *clazz = @"3";
-    NSString *school = @"dx";
-    [s performSelector:selector3 withObject:clazz withObject:school];
+    // compare
+    NSString *str1 = @"abc";
+    NSString *str2 = @"abc";
+    
+    if (str1 == str2) {
+        NSLog(@"the object of str1 and str2 is similar");
+    }
+    
+    if ([str1 isEqualToString:str2]) {
+        NSLog(@"content is similar");
+    }
+    
+    // other method
+    // get length
+    NSUInteger len = [str1 length];
+    NSLog(@"str1 length is %ld", len);
+    
+    // uppercase
+    NSString *upperString = [str1 uppercaseString];
+    NSLog(@"%@", upperString);
+    
+    // lowercase
+    NSString *lowerString = [str1 lowercaseString];
+    NSLog(@"%@", lowerString);
+    
+    // capital
+    NSString *capitalString = [str1 capitalizedString];
+    NSLog(@"%@", capitalString);
+    
+    // get substring
+    NSString *str3 = @"abcdefghi";
+    NSString *subStr = [str3 substringToIndex:2];
+    NSLog(@"%@",subStr);
+    
+    NSString *subStr2 = [str3 substringFromIndex:2];
+    NSLog(@"%@", subStr2);
+    
+    NSString *subStr3 = [str3 substringWithRange:NSMakeRange(3, 3)];
+    NSLog(@"%@", subStr3);
+    
+    // append string
+    NSString *str4 = @"hellow";
+    NSString *appendStr = [str4 stringByAppendingString:@" world"];
+    NSLog(@"%@", appendStr);
+    
+    // search
+    NSString *str5 = @"hello world";
+    NSRange range = [str5 rangeOfString:@"world"];
+    NSLog(@"location:%ld,length:%ld", range.location, range.length);
+    
+    NSString *username = @"switch@gmail.com";
+    // NSRange range2 = [username rangeOfString:@"gmail.com"];
+    NSRange range2 = [username rangeOfString:@"outlook.com"];
+    if (range2.location == NSNotFound) {
+        NSLog(@"email error");
+    } else {
+        NSLog(@"email right");
+    }
+    
+    // replace
+    NSString *email = @"switch@gmail.com";
+    NSString *replaceEmail = [email stringByReplacingOccurrencesOfString:@"@gmail.com" withString:@"@outlook.com"];
+    NSLog(@"%@", replaceEmail);
+    
     
     
     
