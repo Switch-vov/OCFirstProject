@@ -463,75 +463,164 @@ int main(int argc, const char * argv[]) {
 //    [s performSelector:selector2 withObject:str afterDelay:5];
 //    [[NSRunLoop currentRunLoop] run];
     
-    // char to NSString
-    char s[] = "abava";
+//    // char to NSString
+//    char s[] = "abava";
+//    
+//    NSString *re2 = [NSString stringWithCString:s encoding:NSUTF8StringEncoding];
+//    NSLog(@"%@", re2);
+//    
+//    // compare
+//    NSString *str1 = @"abc";
+//    NSString *str2 = @"abc";
+//    
+//    if (str1 == str2) {
+//        NSLog(@"the object of str1 and str2 is similar");
+//    }
+//    
+//    if ([str1 isEqualToString:str2]) {
+//        NSLog(@"content is similar");
+//    }
+//    
+//    // other method
+//    // get length
+//    NSUInteger len = [str1 length];
+//    NSLog(@"str1 length is %ld", len);
+//    
+//    // uppercase
+//    NSString *upperString = [str1 uppercaseString];
+//    NSLog(@"%@", upperString);
+//    
+//    // lowercase
+//    NSString *lowerString = [str1 lowercaseString];
+//    NSLog(@"%@", lowerString);
+//    
+//    // capital
+//    NSString *capitalString = [str1 capitalizedString];
+//    NSLog(@"%@", capitalString);
+//    
+//    // get substring
+//    NSString *str3 = @"abcdefghi";
+//    NSString *subStr = [str3 substringToIndex:2];
+//    NSLog(@"%@",subStr);
+//    
+//    NSString *subStr2 = [str3 substringFromIndex:2];
+//    NSLog(@"%@", subStr2);
+//    
+//    NSString *subStr3 = [str3 substringWithRange:NSMakeRange(3, 3)];
+//    NSLog(@"%@", subStr3);
+//    
+//    // append string
+//    NSString *str4 = @"hellow";
+//    NSString *appendStr = [str4 stringByAppendingString:@" world"];
+//    NSLog(@"%@", appendStr);
+//    
+//    // search
+//    NSString *str5 = @"hello world";
+//    NSRange range = [str5 rangeOfString:@"world"];
+//    NSLog(@"location:%ld,length:%ld", range.location, range.length);
+//    
+//    NSString *username = @"switch@gmail.com";
+//    // NSRange range2 = [username rangeOfString:@"gmail.com"];
+//    NSRange range2 = [username rangeOfString:@"outlook.com"];
+//    if (range2.location == NSNotFound) {
+//        NSLog(@"email error");
+//    } else {
+//        NSLog(@"email right");
+//    }
+//    
+//    // replace
+//    NSString *email = @"switch@gmail.com";
+//    NSString *replaceEmail = [email stringByReplacingOccurrencesOfString:@"@gmail.com" withString:@"@outlook.com"];
+//    NSLog(@"%@", replaceEmail);
     
-    NSString *re2 = [NSString stringWithCString:s encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", re2);
     
-    // compare
-    NSString *str1 = @"abc";
-    NSString *str2 = @"abc";
+//    NSString *str1 = @"158";
+//    NSString *str2 = @"39";
+//    NSInteger i1 = [str1 integerValue];
+//    NSInteger i2 = [str2 integerValue];
+//    NSInteger i3 = i1 - i2;
+//    NSString *str3 = [NSString stringWithFormat:@"%ld", i3];
+//    NSLog(@"%@", str3);
+//    
+//    NSString *str4 = @"123-456-789-000";
+//    NSString *str5 = [str4 stringByReplacingOccurrencesOfString:@"-" withString:@""];
+//    NSLog(@"%@", str5);
+//    NSMutableString *str6 = [[NSMutableString alloc] init];
+//    for (int i = 0; i < str4.length; i++) {
+//        if ([str4 characterAtIndex:i] != '-') {
+//            [str6 appendFormat:@"%c",[str4 characterAtIndex:i]];
+//        }
+//    }
+//    NSLog(@"%@", str6);
     
-    if (str1 == str2) {
-        NSLog(@"the object of str1 and str2 is similar");
-    }
     
-    if ([str1 isEqualToString:str2]) {
-        NSLog(@"content is similar");
-    }
+    NSString *s1 = @"abc";
+    NSString *s2 = @"bcd";
+    NSString *s3 = @"hello";
     
-    // other method
-    // get length
-    NSUInteger len = [str1 length];
-    NSLog(@"str1 length is %ld", len);
+    NSArray *array1 = [[NSArray alloc] initWithObjects:s1, s2, s3, nil];
     
-    // uppercase
-    NSString *upperString = [str1 uppercaseString];
-    NSLog(@"%@", upperString);
+    NSLog(@"%@", array1);
     
-    // lowercase
-    NSString *lowerString = [str1 lowercaseString];
-    NSLog(@"%@", lowerString);
+    NSArray *array2 = [NSArray arrayWithObjects:s1, s2, s3, nil];
+    NSLog(@"%@", array2);
     
-    // capital
-    NSString *capitalString = [str1 capitalizedString];
-    NSLog(@"%@", capitalString);
+    NSArray *array3 = [[NSArray alloc] initWithArray:array2];
+    NSLog(@"%@", array3);
     
-    // get substring
-    NSString *str3 = @"abcdefghi";
-    NSString *subStr = [str3 substringToIndex:2];
-    NSLog(@"%@",subStr);
     
-    NSString *subStr2 = [str3 substringFromIndex:2];
-    NSLog(@"%@", subStr2);
     
-    NSString *subStr3 = [str3 substringWithRange:NSMakeRange(3, 3)];
-    NSLog(@"%@", subStr3);
+    NSString *str3 = [array3 objectAtIndex:1];
+    NSLog(@"%@", str3);
     
-    // append string
-    NSString *str4 = @"hellow";
-    NSString *appendStr = [str4 stringByAppendingString:@" world"];
-    NSLog(@"%@", appendStr);
+    NSUInteger count = [array3 count];
+    NSLog(@"%ld", count);
     
-    // search
-    NSString *str5 = @"hello world";
-    NSRange range = [str5 rangeOfString:@"world"];
-    NSLog(@"location:%ld,length:%ld", range.location, range.length);
-    
-    NSString *username = @"switch@gmail.com";
-    // NSRange range2 = [username rangeOfString:@"gmail.com"];
-    NSRange range2 = [username rangeOfString:@"outlook.com"];
-    if (range2.location == NSNotFound) {
-        NSLog(@"email error");
+    BOOL isContains = [array3 containsObject:@"hello"];
+    if (isContains) {
+        NSLog(@"exist");
     } else {
-        NSLog(@"email right");
+        NSLog(@"not exist");
     }
     
-    // replace
-    NSString *email = @"switch@gmail.com";
-    NSString *replaceEmail = [email stringByReplacingOccurrencesOfString:@"@gmail.com" withString:@"@outlook.com"];
-    NSLog(@"%@", replaceEmail);
+    
+    NSUInteger index = [array3 indexOfObject:@"hello"];
+    if (index != NSNotFound) {
+        NSLog(@"%ld", index);
+    } else {
+        NSLog(@"not exist");
+    }
+    
+    NSString *str2 = [array3 componentsJoinedByString:@"-"];
+    NSLog(@"%@", str2);
+    
+    NSString *os = @"abc-asd-adsa-adsas-ads";
+    NSArray *array4 = [os componentsSeparatedByString:@"-"];
+    NSLog(@"%@", array4);
+    
+    NSString *last = [array4 lastObject];
+    NSLog(@"%@", last);
+    
+    NSArray *array5 = [array4 arrayByAddingObject:@"oaca"];
+    NSLog(@"%@", array5);
+    
+    for (int i = 0; i < [array5 count]; i++) {
+        NSString *ss = [array5 objectAtIndex:i];
+        NSLog(@"%@", ss);
+    }
+    
+    for (NSString *str in array5) {
+        NSLog(@"%@", str);
+    }
+    
+    
+    // array simple syntax
+    NSArray *array6 = @[s1, s2, s3];
+    NSString *str4 = array6[1];
+    NSLog(@"%@",str4);
+    
+    
+    
     
     
     
