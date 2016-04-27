@@ -554,75 +554,109 @@ int main(int argc, const char * argv[]) {
 //    NSLog(@"%@", str6);
     
     
-    NSString *s1 = @"abc";
-    NSString *s2 = @"bcd";
-    NSString *s3 = @"hello";
-    
-    NSArray *array1 = [[NSArray alloc] initWithObjects:s1, s2, s3, nil];
-    
-    NSLog(@"%@", array1);
-    
-    NSArray *array2 = [NSArray arrayWithObjects:s1, s2, s3, nil];
-    NSLog(@"%@", array2);
-    
-    NSArray *array3 = [[NSArray alloc] initWithArray:array2];
-    NSLog(@"%@", array3);
-    
-    
-    
-    NSString *str3 = [array3 objectAtIndex:1];
-    NSLog(@"%@", str3);
-    
-    NSUInteger count = [array3 count];
-    NSLog(@"%ld", count);
-    
-    BOOL isContains = [array3 containsObject:@"hello"];
-    if (isContains) {
-        NSLog(@"exist");
-    } else {
-        NSLog(@"not exist");
-    }
-    
-    
-    NSUInteger index = [array3 indexOfObject:@"hello"];
-    if (index != NSNotFound) {
-        NSLog(@"%ld", index);
-    } else {
-        NSLog(@"not exist");
-    }
-    
-    NSString *str2 = [array3 componentsJoinedByString:@"-"];
-    NSLog(@"%@", str2);
-    
-    NSString *os = @"abc-asd-adsa-adsas-ads";
-    NSArray *array4 = [os componentsSeparatedByString:@"-"];
-    NSLog(@"%@", array4);
-    
-    NSString *last = [array4 lastObject];
-    NSLog(@"%@", last);
-    
-    NSArray *array5 = [array4 arrayByAddingObject:@"oaca"];
-    NSLog(@"%@", array5);
-    
-    for (int i = 0; i < [array5 count]; i++) {
-        NSString *ss = [array5 objectAtIndex:i];
-        NSLog(@"%@", ss);
-    }
-    
-    for (NSString *str in array5) {
-        NSLog(@"%@", str);
-    }
-    
-    
-    // array simple syntax
-    NSArray *array6 = @[s1, s2, s3];
-    NSString *str4 = array6[1];
-    NSLog(@"%@",str4);
-    
-    
+//    NSString *s1 = @"abc";
+//    NSString *s2 = @"bcd";
+//    NSString *s3 = @"hello";
+//    
+//    NSArray *array1 = [[NSArray alloc] initWithObjects:s1, s2, s3, nil];
+//    
+//    NSLog(@"%@", array1);
+//    
+//    NSArray *array2 = [NSArray arrayWithObjects:s1, s2, s3, nil];
+//    NSLog(@"%@", array2);
+//    
+//    NSArray *array3 = [[NSArray alloc] initWithArray:array2];
+//    NSLog(@"%@", array3);
+//    
+//    
+//    
+//    NSString *str3 = [array3 objectAtIndex:1];
+//    NSLog(@"%@", str3);
+//    
+//    NSUInteger count = [array3 count];
+//    NSLog(@"%ld", count);
+//    
+//    BOOL isContains = [array3 containsObject:@"hello"];
+//    if (isContains) {
+//        NSLog(@"exist");
+//    } else {
+//        NSLog(@"not exist");
+//    }
+//    
+//    
+//    NSUInteger index = [array3 indexOfObject:@"hello"];
+//    if (index != NSNotFound) {
+//        NSLog(@"%ld", index);
+//    } else {
+//        NSLog(@"not exist");
+//    }
+//    
+//    NSString *str2 = [array3 componentsJoinedByString:@"-"];
+//    NSLog(@"%@", str2);
+//    
+//    NSString *os = @"abc-asd-adsa-adsas-ads";
+//    NSArray *array4 = [os componentsSeparatedByString:@"-"];
+//    NSLog(@"%@", array4);
+//    
+//    NSString *last = [array4 lastObject];
+//    NSLog(@"%@", last);
+//    
+//    NSArray *array5 = [array4 arrayByAddingObject:@"oaca"];
+//    NSLog(@"%@", array5);
+//    
+//    for (int i = 0; i < [array5 count]; i++) {
+//        NSString *ss = [array5 objectAtIndex:i];
+//        NSLog(@"%@", ss);
+//    }
+//    
+//    for (NSString *str in array5) {
+//        NSLog(@"%@", str);
+//    }
+//    
+//    
+//    // array simple syntax
+//    NSArray *array6 = @[s1, s2, s3];
+//    NSString *str4 = array6[1];
+//    NSLog(@"%@",str4);
     
     
     
+//    // NSMutableArray
+//    NSString *s1 = @"abc";
+//    NSString *s2 = @"bcd";
+//    NSString *s3 = @"hello";
+//    // create NSMutableArray
+//    NSMutableArray *ma1 = [[NSMutableArray alloc] initWithObjects:s1, s2, s3, nil];
+//    // create empty MutableArray
+//    NSMutableArray *ma2 = [NSMutableArray array];
+//    // create a MA and the capacity is 5, if enough auto extend
+//    NSMutableArray *ma3 = [[NSMutableArray alloc] initWithCapacity:5];
+//    
+//    // add element
+//    NSLog(@"%@", ma1);
+//    [ma1 addObject:@"123"];
+//    NSLog(@"%@", ma1);
+//    
+//    // insert element
+//    [ma1 insertObject:@"321" atIndex:2];
+//    NSLog(@"%@", ma1);
+//    
+//    // replace element
+//    [ma1 replaceObjectAtIndex:4 withObject:@"www"];
+//    NSLog(@"%@", ma1);
+//    
+//    
+//    // exchange element
+//    [ma1 exchangeObjectAtIndex:0 withObjectAtIndex:4];
+//    NSLog(@"%@", ma1);
+//    
+//    // delete element
+//    [ma1 removeObjectAtIndex:1];
+//    NSLog(@"%@", ma1);
+//    [ma1 removeObject:@"123"];
+//    NSLog(@"%@", ma1);
+//    [ma1 removeAllObjects];
+//    NSLog(@"%@", ma1);
     
     
 }
