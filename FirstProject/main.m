@@ -25,6 +25,7 @@
 #import "Instrument.h"
 #import "Piano.h"
 #import "Violin.h"
+#import "Student3.h"
 int main(int argc, const char * argv[]) {
 //    int i = 1;
 //    NSLog(@"%d", i);
@@ -657,6 +658,37 @@ int main(int argc, const char * argv[]) {
 //    NSLog(@"%@", ma1);
 //    [ma1 removeAllObjects];
 //    NSLog(@"%@", ma1);
+    
+//    // 循环录入同学成绩，将成绩保存在数组中，然后求平均分
+//    
+//    // 创建一个可变数组
+//    NSMutableArray *ma = [[NSMutableArray alloc] init];
+//    
+//    for (int i = 0; i < 5; i++) {
+//        // 录入名字
+//        NSLog(@"请输入学生姓名：");
+//        char name[20];
+//        scanf("%s", name);
+//        // 录入成绩
+//        NSLog(@"请输入学生成绩：");
+//        float score;
+//        scanf("%f", &score);
+//        
+//        // 将录入的数据交给Student3对象，赋值给对象的属性
+//        Student3 *student = [[Student3 alloc] initWithName:[NSString stringWithCString:name encoding:NSUTF8StringEncoding] withScore:score];
+//        [ma addObject:student];
+//    }
+//    
+//    // 遍历数组求和
+//    float sum = 0;
+//    for (Student3 *s in ma) {
+//        sum += s.score;
+//    }
+//    // 平均分
+//    float avg = sum / ma.count;
+//    NSLog(@"avg=%.1f", avg);
+    
+    
     
     
 }

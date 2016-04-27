@@ -26,6 +26,7 @@
 		52A2A8741CBB8C4C00070DDB /* Student2.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A8731CBB8C4C00070DDB /* Student2.m */; };
 		52A2A8771CBB905C00070DDB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2A8761CBB905C00070DDB /* User.m */; };
 		52BE62521C84267200245806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE62511C84267200245806 /* main.m */; };
+		52E6D7611CD09C680062CC1E /* Student3.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E6D7601CD09C680062CC1E /* Student3.m */; };
 		52F4DDC21C8D62C600C86F35 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4DDC11C8D62C600C86F35 /* Student.m */; };
 		52F4DDC51C8D6A1100C86F35 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4DDC41C8D6A1100C86F35 /* Car.m */; };
 		52F4DDC81C8D6CC500C86F35 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4DDC71C8D6CC500C86F35 /* Manager.m */; };
@@ -83,6 +84,8 @@
 		52A2A8761CBB905C00070DDB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
 		52BE624E1C84267100245806 /* FirstProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BE62511C84267200245806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52E6D75F1CD09C680062CC1E /* Student3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student3.h; sourceTree = "<group>"; };
+		52E6D7601CD09C680062CC1E /* Student3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student3.m; sourceTree = "<group>"; };
 		52F4DDC01C8D62C600C86F35 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		52F4DDC11C8D62C600C86F35 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		52F4DDC31C8D6A1100C86F35 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				525334A81CBE226D00CCA574 /* Violin.m */,
 				525334AA1CBE22AF00CCA574 /* Actor.h */,
 				525334AB1CBE22AF00CCA574 /* Actor.m */,
+				52E6D75F1CD09C680062CC1E /* Student3.h */,
+				52E6D7601CD09C680062CC1E /* Student3.m */,
 			);
 			path = FirstProject;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				525334A31CBE215800CCA574 /* Instrument.m in Sources */,
 				525334AC1CBE22AF00CCA574 /* Actor.m in Sources */,
 				52F4DDC21C8D62C600C86F35 /* Student.m in Sources */,
+				52E6D7611CD09C680062CC1E /* Student3.m in Sources */,
 				52A2A8701CBB8B1F00070DDB /* NSString.m in Sources */,
 				52F4DDC81C8D6CC500C86F35 /* Manager.m in Sources */,
 				52A225ED1C9FDCE1000B4C5C /* Person2.m in Sources */,
