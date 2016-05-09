@@ -690,53 +690,69 @@ int main(int argc, const char * argv[]) {
     
     
     // NSDictionary
-    NSArray *a1 = @[@"zs", @"zf"];
-    NSArray *a2 = @[@"lb", @"ld"];
+//    NSArray *a1 = @[@"zs", @"zf"];
+//    NSArray *a2 = @[@"lb", @"ld"];
+//    
+//    // create
+//    NSDictionary *d1 = [[NSDictionary alloc] initWithObjectsAndKeys:
+//                       a1,@"z",
+//                       a2,@"l", nil];
+//    NSDictionary *d2 = [NSDictionary dictionaryWithObjectsAndKeys:
+//                        a1, @"z",
+//                        a2, @"l", nil];
+//    NSLog(@"%@   %ld", d1, [d1 count]);
+//    
+//    // get value by key
+//    NSArray *array = [d1 objectForKey:@"z"];
+//    NSLog(@"%@", array);
+//    
+//    // get all keys
+//    NSArray *keys = [d1 allKeys];
+//    NSLog(@"%@", keys);
+//    
+//    // get all values
+//    NSArray *values = [d1 allValues];
+//    NSLog(@"%@", values);
+//    
+//    // order dictionary
+//    // 1. get all keys
+//    NSArray *key1s = d1.allKeys;
+//    // for loop
+//    for (int i = 0; i < key1s.count; i++) {
+//        NSString *key = key1s[i];
+//        NSArray *value = [d1 objectForKey:key];
+//        NSLog(@"key=%@,value=%@", key, value);
+//    }
+//    
+//    // for-in loop
+//    for (NSString *key in key1s) {
+//        NSArray *value = [d1 objectForKey:key];
+//        NSLog(@"key=%@,value=%@", key, value);
+//    }
+//    
+//    // the simple syntax of dictionary
+//    NSDictionary *dic = @{
+//                          @"z":a1,
+//                          @"l":a2
+//                          };
+//    NSArray *val1 = dic[@"z"];
+//    NSLog(@"%@", val1);
     
-    // create
-    NSDictionary *d1 = [[NSDictionary alloc] initWithObjectsAndKeys:
-                       a1,@"z",
-                       a2,@"l", nil];
-    NSDictionary *d2 = [NSDictionary dictionaryWithObjectsAndKeys:
-                        a1, @"z",
-                        a2, @"l", nil];
-    NSLog(@"%@   %ld", d1, [d1 count]);
-    
-    // get value by key
-    NSArray *array = [d1 objectForKey:@"z"];
-    NSLog(@"%@", array);
-    
-    // get all keys
-    NSArray *keys = [d1 allKeys];
-    NSLog(@"%@", keys);
-    
-    // get all values
-    NSArray *values = [d1 allValues];
-    NSLog(@"%@", values);
-    
-    // order dictionary
-    // 1. get all keys
-    NSArray *key1s = d1.allKeys;
-    // for loop
-    for (int i = 0; i < key1s.count; i++) {
-        NSString *key = key1s[i];
-        NSArray *value = [d1 objectForKey:key];
-        NSLog(@"key=%@,value=%@", key, value);
+    NSMutableDictionary *course = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"CoreJava", @"Tom",
+                                   @"Oracle", @"John",
+                                   @"Oracle", @"Susan",
+                                   @"JDBC", @"Jerry",
+                                   @"Unix", @"Jim",
+                                   @"JSP", @"Kevin",
+                                   @"JSP", @"Lucy" ,nil];
+    [course setObject:@"JDBC" forKey:@"Allen"];
+    [course setObject:@"CoreJava" forKey:@"Lucy"];
+    NSLog(@"%@", course);
+    for (id key in course) {
+        id cls = course[key];
+        NSLog(@"老师：%@, 课程：%@", key, cls);
     }
-    
-    // for-in loop
-    for (NSString *key in key1s) {
-        NSArray *value = [d1 objectForKey:key];
-        NSLog(@"key=%@,value=%@", key, value);
-    }
-    
-    // the simple syntax of dictionary
-    NSDictionary *dic = @{
-                          @"z":a1,
-                          @"l":a2
-                          };
-    NSArray *val1 = dic[@"z"];
-    NSLog(@"%@", val1);
-    
+    NSArray *allkeys = [course allKeysForObject:@"JSP"];
+    NSLog(@"%@", allkeys);
     
 }
